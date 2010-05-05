@@ -1,0 +1,17 @@
+require 'rubygems'
+require 'rdf'
+
+
+
+
+puts "Iterating over known RDF serialization formats \n"
+
+RDF::Format.each { |klass| puts klass.name }
+
+
+RDF::Reader.open("foafexample.rdf") do |reader|
+  reader.each_statement do |statement|
+    puts statement.inspect
+  end
+end
+

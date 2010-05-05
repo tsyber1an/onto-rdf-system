@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<markers>
+ <marker lat="43.65654" lng="-79.90138" html="Some stuff to display in the&lt;br&gt;First Info Window" label="Marker One"/>
+ <marker lat="43.91892" lng="-78.89231" html="Some stuff to display in the&lt;br&gt;Second Info Window" label="Marker Two"/>
+ <marker lat="43.82589" lng="-79.10040" html="Some stuff to display in the&lt;br&gt;Third Info Window" label="Marker Three"/>
+</markers>
+
+<persons>
+	<person name="Pavel Filatov">
+	 <location>
+			<country>Russia</country>
+			<city>Novosibirsk</city>
+			<address></address>
+	 </location>
+	 <info>
+		<gender>male</gender>
+		<birthday>10.05.1977</birthday>
+	 </info>
+	</person>
+	<person name="Alex Filatov">
+	 <location>
+			<country>Russia</country>
+			<city>Novosibirsk</city>
+			<address></address>
+	 </location>
+	 <info>
+		<gender>male</gender>
+		<birthday>26.03.1975</birthday>
+	 </info>
+	</person>
+	<person name="Marina Filatova">
+	 <location>
+			<country>Russia</country>
+			<city>Novosibirsk</city>
+			<address></address>
+	 </location>
+	 <info>
+		<gender>female</gender>
+		<birthday>15.08.1978</birthday>
+	 </info>
+	</person>
+	<person name="Sasha Filatov">
+	 <location>
+			<country>Russia</country>
+			<city>Novosibirsk</city>
+			<address></address>
+	 </location>
+	 <info>
+		<gender>male</gender>
+		<birthday>10.05.99</birthday>
+	 </info>
+	</person>
+</persons>

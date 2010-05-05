@@ -1,0 +1,12 @@
+<h1>Editing static</h1>
+
+<% form_for(@static) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @static %> |
+<%= link_to 'Back', statics_path %>

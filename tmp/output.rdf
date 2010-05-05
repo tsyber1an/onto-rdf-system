@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/foaf">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/foaf">
+    <ns0:maker xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="http://datagraph.org/jhacker/#self"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/foaf">
+    <ns0:primaryTopic xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="http://datagraph.org/jhacker/#self"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:account xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="http://datagraph.org/jhacker"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:nick xmlns:ns0="http://xmlns.com/foaf/0.1/">jhacker</ns0:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:name xmlns:ns0="http://xmlns.com/foaf/0.1/">J. Random Hacker</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:mbox xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="mailto:jhacker@example.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:homepage xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="http://example.org/~jhacker/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datagraph.org/jhacker/#self">
+    <ns0:knows xmlns:ns0="http://xmlns.com/foaf/0.1/" rdf:resource="http://ar.to/#self"/>
+  </rdf:Description>
+</rdf:RDF>

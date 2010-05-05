@@ -1,0 +1,10 @@
+<http://datagraph.org/jhacker/foaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
+<http://datagraph.org/jhacker/foaf> <http://xmlns.com/foaf/0.1/maker> <http://datagraph.org/jhacker/#self> .
+<http://datagraph.org/jhacker/foaf> <http://xmlns.com/foaf/0.1/primaryTopic> <http://datagraph.org/jhacker/#self> .
+<http://datagraph.org/jhacker/#self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/account> <http://datagraph.org/jhacker> .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/nick> "jhacker" .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/name> "J. Random Hacker" .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/mbox> <mailto:jhacker@example.org> .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/homepage> <http://example.org/~jhacker/> .
+<http://datagraph.org/jhacker/#self> <http://xmlns.com/foaf/0.1/knows> <http://ar.to/#self> .
