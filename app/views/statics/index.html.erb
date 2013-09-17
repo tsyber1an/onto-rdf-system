@@ -10,7 +10,7 @@ $(function () {
 /*[[1990, 18.9], [1991, 18.7], [1992, 18.4], [1993, 19.3], [1994, 19.5], [1995, 19.3], [1996, 19.4], [1997, 20.2], [1998, 19.8], [1999, 19.9], [2000, 20.4], [2001, 20.1], [2002, 20.0], [2003, 19.8], [2004, 20.4]] */
         }]
 
-		var options = {
+	var options = {
         series: {
             lines: { show: true },
             points: { show: true }
@@ -23,104 +23,7 @@ $(function () {
 
 
 
-           
+
     $.plot($("#placeholder"),data);
 });
 </script>
-
-<% content_for :head do %>
-<!--
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAS0Wqn_f0K6890L4Cjmm1BhT2yXp_ZAY8_ufC3CFXhHIE1NvwkxThDItaQlFuZf90RaXhIackbdyw0Q" type="text/javascript"></script>
- 	<script type="text/javascript">
-		var gmarkers = [];
-		var side_bar_html = "";
-
-
-		function initialize() {
-			if (GBrowserIsCompatible()) {
-				var map_canvas = document.getElementById("map_canvas")
-				var map = new GMap2(map_canvas);
-		    map.addControl(new GLargeMapControl());
-		    map.addControl(new GMapTypeControl());
-	      map.setCenter(new GLatLng( 40.907787,-70.359741), 9);
-				// Read the data from example.xml
-	      GDownloadUrl("/example.xml", function(doc) {
-        var xmlDoc = GXml.parse(doc);
-        var markers = xmlDoc.documentElement.getElementsByTagName("person");
-
-	      for (var i = 0; i < markers.length; i++) {
-					var label = markers[i].getAttribute("name");
-					var info = markers[i].getElementsByTagName("info")[0];
-						var gender = info.getElementsByTagName("gender")[0].firstChild.nodeValue;
-						var birthday = info.getElementsByTagName("birthday")[0].firstChild.nodeValue;
-					var location = markers[i].getElementsByTagName("location")[0];
-						var country = location.getElementsByTagName("country")[0].firstChild.nodeValue;
-						var city =  location.getElementsByTagName("city")[0].firstChild.nodeValue;
-					var geocoder = new GClientGeocoder();
-					var searchableaddress = city + country;
-          var point = geocoder.getLatLng(searchableaddress);
-					var html = 'Person: <b>' + label + '<\/b>'
-				
-          var marker = createMarker(point,label,html);
-          map.addOverlay(marker);
-        } 
-        // put the assembled side_bar_html contents into the side_bar div
-        document.getElementById("side_bar").innerHTML = side_bar_html;
-      });
-//        map.setUIToDefault();
-			} else {
-	      alert("Sorry, the Google Maps API is not compatible with this browser");
-  	  }
-		}
-
-      // A function to create the marker and set up the event window
-      function createMarker(point,name,html) {
-        var marker = new GMarker(point);
-        GEvent.addListener(marker, "click", function() {
-          marker.openInfoWindowHtml(html);
-        });
-        // save the info we need to use later for the side_bar
-        gmarkers.push(marker);
-        // add a line to the side_bar html
-        side_bar_html += '<a href="javascript:myclick(' + (gmarkers.length-1) + ')">' + name + '<\/a><br>';
-        return marker;
-      }
-
-      function myclick(i) {
-        GEvent.trigger(gmarkers[i], "click");
-      }
-
-
-			
-
-	</script> -->
-<%= javascript_include_tag 'flot/jquery.min', 'flot/jquery.flot.min' %>
-	<noscript><b>JavaScript must be enabled in order for you to use Google Maps.</b> 
-		  However, it seems JavaScript is either disabled or not supported by your browser. 
-		  To view Google Maps, enable JavaScript by changing your browser options, and then 
-		  try again.
-	</noscript>
-
-
-<% end %>
-
-
-<%# content_for :bodyattr do -%> <!--onload="initialize()" onunload="GUnload()"--><%# end %>
-<!--
-<h1> Map Statistic </h1>
-    
-
-    <table border=1>
-      <tr>
-        <td>
-           <div id="map_canvas" style="width: 550px; height: 450px"></div>
-        </td>
-        <td width = 150 valign="top" style="text-decoration: underline; color: #4444ff;">
-           <div id="side_bar"></div>
-        </td>
-      </tr>
-
-    </table> -->
-
-
-
